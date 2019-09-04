@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'lato-bold';
+    src: url('../../lato/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../../lato/Lato-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: lato-regular;
+}
+button:active {
+  outline: none;
+  border: none;
+}
+button:focus {
+  outline:0;
+}
+textarea {
+  resize: none;
+}
+
+.todo-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.4rem;
+  font-size: 28px;
+  color: #000000;
+  font-family: lato-bold;
+  border-top: 5px solid mediumseagreen;
+}
+
+.loading-animation {
+  display: none;
+  text-align: center;
+}
+.loading-animation img {
+  width: 45px;
+}
+.todo-container {
+  position: relative;
+  display: flex;
+  margin: 0 5%;
+}
+.todo-content {
+  width: 33.3%;
+  height: 100%;
+  margin: 0.6rem;
+  border-radius: 20px;
+  box-shadow: 0 0 3px lightgrey;
+  overflow: hidden;
+}
+.todo-item {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 1rem;
+}
+.todo-item-text {
+  width: 85%;
+  min-height: 100px;
+}
+.todo-item-action {
+  text-align: right;
+  width: 15%;
+}
+.todo-item-action a {
+  width: 40px;
+  height: 40px;
+  margin: 1px 0;
+}
+.todo-title, .todo-list {
+  width: auto;
+}
+.todo-list {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+.todo-title {
+  color: #ffffff;
+  font-family: lato-bold;
+  padding: 1rem;
+}
+#title-todo {
+  background-color: orange;
+}
+#title-doing {
+  background-color: dodgerblue;
+}
+#title-done {
+  background-color: mediumseagreen;
+}
+.todo-list {
+  max-height: 540px;
+  overflow: scroll;
+}
+.todo-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0.6rem 0;
+  background-color: mediumseagreen;
+  color: #ffffff;
+}
+.todo-footer a {
+  color: #ffffff;
+  font-weight: 900;
+}
+.add {
+  border: none;
+  background-color: mediumseagreen;
+  color: white;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+}
+.add:hover {
+  background-color: forestgreen;
+}
+.todo-name {
+  font-family: lato-bold;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .todo-header {
+    font-size: 6vw;
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .todo-container {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .todo-content {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .todo-title {
+    text-align: center;
+    font-size: 5vw;
+  }
+}
