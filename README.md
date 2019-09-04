@@ -1,2 +1,2 @@
 # todo
-simple todo list
+simple todo list with laravel 5.2
